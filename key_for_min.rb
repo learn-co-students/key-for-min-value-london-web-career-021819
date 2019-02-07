@@ -1,14 +1,14 @@
 # hash = {:blake => 500, :ashley => 2, :adam => 1}
 
 def key_for_min_value(name_hash)
-  min_num_value = 0
-  min_value_name = nil
+  value = 0
+  key = nil
 
-  name_hash.each do |name, value|
-    if number_value <= min_num_value || min_value_name == 0
-      min_value_name = value
-      min_value_name = name
+  name_hash.each { |name_key, number|
+    if number <= value || value == 0
+      value = number
+      key = name_key
     end
-  end
-    min_value_name
+  }
+  key
 end
