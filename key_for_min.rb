@@ -8,6 +8,7 @@ def key_for_min_value(name_hash)
     if number <= value || value == 0
       value = number
       key = name_key
+    else return nil
     end
   }
   key
